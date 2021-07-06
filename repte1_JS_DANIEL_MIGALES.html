@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Repte PLA01_javaScript</title>
+	<script type="text/javascript">
+		// Això és un comentari d'una línia. Per escriure codi no s'ha d'escriure //
+		/* Això també és un comentari, i pot ocupar diferents línies. Per escriure codi no s'ha d'escriure */
+		// Guarda aquest mateix fitxer substituint _EL_TEU_NOM_COGNOM pel teu nom i el primer cognom, quedant finalment amb un nom similiar a: repte1_JS_ERVIGI_REI_GOT.html
+
+
+		/* PUNT 1. (punt ja creat com a exemple)
+		A: Crea una variable global (anomenada 'poblat') que tingui com a valor el nom del poblat o localitat on vius.
+		B: Mostra dintre d'una finestra d'alerta la frase "Vius a " + el valor de la variable poblat (utilitzant cometes dobles). */
+
+		var poblat = "Barcelona";
+		alert("Vius a " + poblat);
+
+		/* PUNT 2.
+		A: Crea una variable global (anomenada 'espases') que tingui (per defecte) un valor 'undefined' (sense donar-li manualment aquest valor).
+		Escriu a continuació (sense el símbols //) el codi per resoldre el punt 2. */
+
+		var espases;
+
+		/* PUNT 3.
+		A: Crea una funció (anomenada com el teu nom). 
+		B: Crea (on sigui necessari) una variable LOCAL (anomenada 'cavalls voladors' o nom similar) que únicament tingui valor dins de la funció, però sense cap valor inicial.
+		C: En la línia posterior dóna-li un valor null. */
+
+		function daniel() {
+			let cavallsVoladors;
+			cavallsVoladors = null;
+		}
+
+
+		/* PUNT 4.
+		A: Crea una altra funció (anomenada com el teu primer cognom).
+		B: Crea una variable global (anomenada 'hora actual' o nom similar) fora de la funció i sense un valor inicial.
+		C: Posteriorment, dóna-li un valor DINS d'aquesta funció.
+		El format del valor d'aquesta variable serà (per exemple): 14:30PM. (Pot ser qualsevol hora i és un valor fix que no es modifica segons l’hora actual).
+		D: Crea una altra variable (anomenada 'potes del meu cavall') que només tingui valor dintre d'aquesta funció. El seu valor és la quantitat de potes del teu cavall seguida de la paraula "potes" (per exemple: 5 potes). */
+
+		function migales() {
+			//horaActual = new Date().getHours + ":" + new Date().getMinutes;
+			horaActual = "14:30PM"
+			let potesDelMeuCavall = "4 potes";
+		}
+		var horaActual;
+
+		/* PUNT 5.
+		A: Crea una variable (anomenada 'edat'), que únicament tingui valor dins del següent condicional if (true) {...}, amb un valor correcte. */
+
+		if (true) {
+			let edat = 42;
+		}
+
+		/* PUNT 6.
+		A: Crea una variable que es pugui consultar des de qualsevol lloc, que com a nom de la variable sigui el teu nom i els teus dos cognoms amb un valor booleà. */
+
+		var danielMigalesPuertas = true;
+
+		/* PUNT 7. (Bonus track, només per pujar nota)
+		A: Mostra en una finestra d'alerta (sense utilitzar les cometes dobles) el següent text:
+		Tens [el valor de la variable del punt 5] anys.
+		Com la variable (edat) del punt 5 és local, hauràs d'afegir codi suplementari (al lloc on sigui necessari) per poder accedir a aquest valor. */
+
+
+		//Para este punto, creo que la unica solucion es volver a crear la variable edat o meter el alert en el mismo condicional del punto 5
+		if (true) {
+			let edat = 42;
+			alert(`Tens ${edat} anys`);
+		}
+
+		/* PUNT 8.
+		A: Crea una variable global (anomenada 'resultat') i dóna-li els valors necessaris perquè com a resultat mostri 'NaN' en una finestra d'alerta, però sense donar-li aquest valor manualment. */
+
+		var resultat = "cinquenta";
+
+		function multiplicacion() {
+			var valorNan = resultat * 10;
+			alert(valorNan);
+		}
+		multiplicacion(resultat);
+
+		/* PUNT 9.
+		A: Crea un tipus de dada (anomenat 'nombre d'orelles'), que una vegada definit no es pugui modificar el seu valor posteriorment i dóna-li un valor correcte. */
+
+		const NOMBRE_D_ORELLES = 2;
+
+		/* PUNT 10.
+		A: Crea un tipus de dada (anomenat més o menys '3 aficions'), que contingui diversos valors. El primer valor serà la quantitat de braços que tens, el segon el teu nom de guerra i els 3 següents les teves tres aficions principals. */
+
+		var _3_Aficcions = [2, "Migeils", "videojocs", "programacio", "mirar series Sci-fi"];
+
+		/* PUNT 11.
+		A: Mostrar en una finestra d'alerta el següent missatge (sense utilitzar cometes invertides i respectant els espais existent entre les paraules):
+		
+		Jo [el segon valor de l'array], que tinc [el primer valor de l'array] braços, m'agrada molt [el darrer valor de l'array]. */
+
+		alert("Jo " + _3_Aficcions[1] + ", que tinc " + _3_Aficcions[0] + " braços, m'agrada molt " + _3_Aficcions[4] + ".");
+
+		/* PUNT 12.
+		A: Crea una variable global (anomenada 'tipus de dada') que com a valor tingui el tipus de valor de la primera dada de l'array (és a dir la quantitat de braços que tens) detectada per javaScript.
+		B: Mostra en una finestra d'alerta el següent resultat:
+ 
+		   El valor de la primera dada de l'array és de 'tipus' [el tipus de dada que javaScript detecti segons el valor d'aquest primer valor].
+
+		Requisits:
+		- No es poden utilitzar ni les cometes dobles ni les invertides.
+		- Les cometes simples que envolten la paraula 'tipus' han de mostrar-se.
+		- El valor que es troba entre els [...] no ha de ser escrit manualment, sinó que ha de ser detectat per javaScript. */
+
+		var tipusDeDada = typeof (_3_Aficcions[0]);
+		alert('El valor de la primera dada de l\'array és de \'tipus\' ' + tipusDeDada);
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
